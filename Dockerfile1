@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk-alpine
+
+ADD target/rest-api-full-stack-1:0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/app.war
+
+ENTRYPOINT ["catalina.sh, "run"]
